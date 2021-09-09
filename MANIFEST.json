@@ -1,0 +1,39 @@
+{
+ "collection_info": {
+  "namespace": "fortinet",
+  "name": "fortianalyzer",
+  "version": "0.0.2",
+  "authors": [
+   "Link Zheng (@chillancezen)",
+   "Xue Jie (@JieX19)",
+   "Hongbin Lu (@fgtdev-hblu)",
+   "Frank Shen (@frankshen01)"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "fortinet",
+   "fortianalyzer",
+   "ansible"
+  ],
+  "description": "The FortiAnalyzer Ansible Collection.",
+  "license": [
+   "GPL-2.0-or-later"
+  ],
+  "license_file": null,
+  "dependencies": {
+   "ansible.netcommon": "*"
+  },
+  "repository": "https://github.com/fortinet-ansible-dev/ansible-galaxy-fortianalyzer-collection/tree/galaxy/0.0.2",
+  "documentation": "https://ansible-galaxy-fortianalyzer-docs.readthedocs.io/en/galaxy-0.0.2",
+  "homepage": "https://fortinet.com",
+  "issues": "https://github.com/fortinet-ansible-dev/ansible-galaxy-fortianalyzer-collection/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "018221858b71e1fcc56294a812476eee247afdc080272969acd70f6be6d9a2be",
+  "format": 1
+ },
+ "format": 1
+}
