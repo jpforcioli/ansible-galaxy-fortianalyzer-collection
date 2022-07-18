@@ -189,6 +189,7 @@ class HttpApi(HttpApiBase):
 
         self._update_request_id()
         json_request = {
+            "jsonrpc": "2.0",
             "method": method,
             "params": params,
             "session": self.sid,
@@ -223,7 +224,16 @@ class HttpApi(HttpApiBase):
             result = response["result"][0]
         else:
             result = response["result"]
-        return result["status"]["code"], result
+
+        if result.get("status") == None:
+            # Reformat the "result"
+            result["status"] = {
+                "code": 0,
+                "message": "OK"
+            }
+
+        return result["status"]["code"], result            
+
 
     def _update_self_from_response(self, response, url, data):
         self._last_response_raw = response
